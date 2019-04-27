@@ -1,0 +1,850 @@
+body {
+  background-color: #e6e6e6;
+}
+
+.fontfamilystyling {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+/*CARAOUSEL*/
+.cycle-slideshow {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+/*Previous and next buttons*/
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0,0,0,0.35);
+  color: #FFF;
+  padding: 1px 10px;
+  display: block;
+  cursor: pointer;
+  font-size:350%;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.cycle-next {
+  right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next,
+.cycle-slideshow:hover .slide-text {
+  opacity: 1;
+}
+
+.cycle-pager {
+  position: absolute;
+  top: 20px;
+  z-index: 1003;
+  width: 100%;
+  text-align: center;
+}
+
+.cycle-pager span {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFF;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.cycle-pager .cycle-pager-active {
+  background-color: #000;
+}
+
+.col-lg-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*btn style*/
+.btn-a,
+/* .btn-b, */
+.btn-c,
+.btn-d,
+.btn-e {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #365267;
+  color: #FFF;
+  font-size: 84%;
+  margin-left: 10px;
+}
+
+.btn-a:hover,
+/* .btn-b:hover, */
+.btn-c:hover,
+.btn-d:hover,
+.btn-e:hover {
+  text-decoration: none;
+  background-color: #FFF;
+  color: #365267;
+}
+
+.caraousel .slide {
+  width: 100%;
+  position: relative;
+}
+
+.caraousel .slide img {
+  display: block;
+  width: 100%;
+  height: 530px;
+}
+
+.caraousel .slide-text {
+  position: absolute;
+  text-align: center;
+  font-size: 150%;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  color: #FFF;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+  .caraousel .slide-text {
+    background-color: rgba(0,0,0,0.7);
+    opacity: 1;
+  }
+
+  .cycle-prev, .cycle-next {
+    opacity: 1;
+  }
+
+}
+/* CAROUSEL STYLING ENDS */
+
+
+/* TECHNOLOGY STYLING STARTS */
+
+/* head {
+  font-family: 'Poppins', sans-serif;
+} */
+
+section {
+  display: block;
+}
+
+.technology img {
+  width:72px;
+}
+
+.head {
+  font-family:Poppins,sans-serif;
+}
+
+.title-heading {
+  text-align:center;
+  font-size:40px;
+  text-transform:uppercase;
+  font-weight:400;
+  text-shadow:0 1px 2px #000;
+}
+
+.title-heading hr {
+  width:5.2em;
+  color:#000;
+  padding:1.5px;
+  margin-top:-0.5px;
+  background:#000;
+  box-shadow:0 5px 8px grey;
+  border-radius:50px
+}
+
+.text {
+  font-family:Tinos,serif;
+}
+
+.Platforms .head{
+  margin-left: 50px;
+}
+
+.btn {
+  background: transparent;
+  margin-bottom: 10px;
+  margin-top: 23px;
+  margin-right: 35px;
+  border: 1px solid rgba(5,117,145,1);
+  color: rgba(5,117,145,1);
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(5,117,145,1);
+}
+
+.activebtn, .btn:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(5,117,145,.8);
+}
+
+nav ul li {
+  display: block;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.internal-nav {
+  margin-left: 57px;
+}
+
+.tab {
+  border-bottom: none;
+}
+
+/* #myTab1 {
+  margin-left: 60px;
+} */
+
+/* STYLING THE PLATFORM FLIP-BOX */
+.flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 250px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+  margin-left: 35px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  width: 100%;
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  width: 100%;
+  background-color: rgba(5,117,145,1);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 30px 20px 0px 20px;
+  box-sizing: border-box;
+}
+
+.flip-box-back p {
+  margin-top: 30px;
+}
+
+.flip-box-front img {
+  width: 500px;
+  height: 250px;
+}
+
+.hovereffect{
+  display: none;
+}
+
+/* DESCRIPTION STYLING STARTS */
+.prservices {
+  font-size: 150%;
+  color : #fff;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url(../images/WM3.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-stretch: expanded;
+}
+
+.prservices ul {
+  margin-left: 480px;
+  list-style: none;
+}
+
+.ProfessionalBanner {
+  font-weight: bold;
+  margin-top: 60px;        /*200*/
+  margin-bottom: 30px;     /*100*/
+  text-shadow: 2px 2px grey;
+  margin-left: 360px;
+  font-size: 400%;
+}
+
+.readmore{
+  display: none;
+}
+
+#more{
+  display: none;
+}
+
+/*Styling Button*/
+.nextsection {
+  position: absolute;
+  padding: 0 15px;
+  font-size: 300%;
+  color: #399fd2;
+  background-color: rgba(0,0,0,0.8);
+  /* background: linear-gradient(to bottom, #1a1a1a 100%, black 100%); */
+  margin-left: 360px;
+}
+
+.nextsection:focus {
+  outline: 0;
+}
+}
+
+@media screen and (max-width: 700px) {
+  .nextsection {
+    display: none;
+  }
+}
+
+.wrap {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 350%;
+  font-weight: lighter;
+  font-family: cursive;
+  color: orange;
+}
+
+.mg {
+  text-align: right;
+  font-size: 70%;
+  color: black;
+}
+
+.scservices {
+  margin-top: 100px;
+  background: rgba(0,0,0.85) url(../images/section2n.jpg) center right no-repeat;
+  background-size: cover;
+}
+
+.SocialBanner {
+  text-align: center;
+  font-size: 600%;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  padding: 50px 0px 50px 0px;
+  text-shadow: 4px 4px grey;
+}
+
+.NGOs, .UTSAV, .EDUCATION {
+  width: 50%;
+  background-color: rgba(5,117,145,0.7);
+  color: #fff;
+  font-size: 150%;
+  padding: 40px 10px;
+  border-radius: 20px;
+  opacity: 0.8;
+  padding-bottom: 50px;
+}
+
+.NGOs:hover, .UTSAV:hover, .EDUCATION:hover {
+  background-color: rgba(5,117,145,1);
+  transition: opacity 0.5s;
+
+}
+
+.NGOs p,.UTSAV p, .EDUCATION p {
+  margin-left: 10px;
+}
+
+.NgoHeading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.UtsavHeading, .EducationHeading {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.UTSAV {
+  position: relative;
+  margin-left: 50%;
+}
+
+@media screen and (max width: 1200px) {
+  .col-lg-6{
+    float: left
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .ProfessionalBanner{
+    margin-left: 200px;
+    font-size: 250%;
+  }
+
+  .prservices ul {
+    margin-left: 270px;
+    font-size: 85%;
+  }
+
+  .nextsection {
+    font-size:250%;
+    margin-left: 200px;
+  }
+
+  .wrap {
+    font-size: 250%;
+  }
+
+  .SocialBanner {
+    font-size: 400%;
+  }
+
+  .NGOs,
+  .UTSAV,
+  .EDUCATION {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slide img {                                                        /*EXTRA*/
+    height: 400px;
+  }
+
+  .ProfessionalBanner {
+    margin-left:100px;
+  }
+
+  .prservices ul {
+    margin-left: 170px;
+  }
+
+  .nextsection {
+    margin-left: 100px;
+  }
+
+  .wrap {
+    font-size: 200%;
+  }
+
+  .NGOs,
+  .UTSAV,
+  .EDUCATION {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: inherit;
+  }
+
+  .UTSAV {
+    position: static;
+  }
+
+  .slide-text {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slide img {                                                        /*EXTRA*/
+    height: 400px;
+  }
+
+  .ProfessionalBanner {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .prservices ul {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .nextsection {
+    position: static;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 350%;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .flip-box {
+    margin-left: 5px;
+  }
+
+  .head {
+    margin-top: 50px;
+  }
+
+  #myTab1 {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flip-box {
+    width: 450px;
+  }
+  .flip-box-front img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .flip-box {
+    width: 420px;
+  }
+  .flip-box-front img {
+    width: 420px;
+  }
+  .internal-nav {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .flip-box {
+    width: 640px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    width: 640px;
+  }
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flip-box {
+    width: 460px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    width: 460px;
+  }
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 696px) {
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+
+  .flip-box {
+    width: 450px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    width: 450px;
+  }
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+
+  .flip-box {
+    width: 450px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    width: 450px;
+  }
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+
+  .flip-box {
+    width: 419px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    width: 419px;
+  }
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 513px) {        /*MIDDLE*/
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+
+  .flip-box {
+    width: 388px;
+    height: 300px;
+    margin-left: -25px;
+  }
+
+  .flip-box-front img {
+    width: 388px;
+    height: 300px;
+  }
+
+  .flip-box-back p {
+    margin-top: 15px;
+    font-size: 95%;
+  }
+
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+  .NGO, .UTSAV, .EDUCATION{
+    background-color: rgba(5,117,145,1);
+  }
+
+  .internal-nav {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+
+  .flip-box {
+    width: 357px;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .flip-box-front img {
+    position: relative;
+    width: 325px;
+    height: 270px;
+    box-sizing: content-box;
+  }
+
+  .flip-box-back p {
+    margin-top: 15px;
+    font-size: 95%;
+  }
+
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+  #myBtn{                                     /*EXTRA*/
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #328ca2;
+    margin-left: 35%;
+  }
+
+  .NGO, .UTSAV, .EDUCATION{
+    background-color: rgba(5,117,145,1);
+  }
+
+  .internal-nav {
+    margin-left: 0px;
+  }
+  .internal-nav li .btn {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .caraousel .slide img {
+    height: 400px;
+  }
+
+  .caraousel .slide-text{
+    font-size: 100%;
+  }
+
+  .Platforms{
+    margin-top: 20px;
+  }
+
+  .Platforms .head{
+    margin-left: 0px;
+ }
+
+  .flip-box {
+    width: 325px;
+    height: 270px;
+    margin-left: -30px;
+    box-sizing: content-box;
+  }
+
+  .flip-box-front img {
+    position: relative;
+    width: 325px;
+    height: 270px;
+    box-sizing: content-box;
+  }
+
+  .flip-box-back p {
+    margin-top: 15px;
+    font-size: 95%;
+  }
+
+
+  .internal-nav {
+    text-align: center;
+  }
+
+  .internal-nav ul{
+    display: inline-block;
+  }
+
+  .internal-nav ul li{
+    box-sizing: content-box;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .hovereffect{
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+  }
+
+ .ProfessionalBanner{
+    font-size: 40px;
+    margin-left: 30px;
+  }
+
+  .nextsection{
+    display: none;
+  }
+
+  .prservices ul{
+    font-size: 70%;
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  .ProfessionalDescription ul {               /*EXTRA*/
+    display: none;
+  }
+
+  .readmore{                                  /*EXTRA*/
+    display: inline;
+    margin-bottom: 20px;
+  }
+
+  #myBtn{                                     /*EXTRA*/
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #328ca2;
+    margin-left: 34%;
+  }
+
+  .scservices{
+    font-size: 90%;
+  }
+
+  .NgoHeading, .UtsavHeading, .EducationHeading{
+    font-size: 120%;
+  }
+
+  .NGO, .UTSAV, .EDUCATION{
+    background-color: rgba(5,117,145,1);
+  }
+
+  .technologies{
+    margin-top: -30px;
+  }
+
+}
+
+/* @media screen and (max-width: 600px) {
+
+} */

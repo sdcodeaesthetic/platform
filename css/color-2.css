@@ -1,0 +1,43 @@
+
+/*** 
+
+====================================================================
+	Color Two
+====================================================================
+
+ ***/
+
+
+
+.s-list span.fa,
+.testimonials-style-two .testimonial-item .quote-icon
+
+{
+	color: #382f2f;
+}
+
+
+.has-line-center::after,
+.has-line::after
+{
+	background: #eee !important
+}
+
+.testimonials-style-two .testimonial-item .author-thumb img,
+{
+	border-color: #382f2f !important
+}
+
+
+
+.has-gradient {
+    background-image: -webkit-linear-gradient(to right,#0d0b0b, #6d6860);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(to right), color-stop(#0d0b0b), to(#6d6860));
+    background-image: linear-gradient(to right, #0d0b0b, #6d6860);
+    color: #fff
+}
+
+ .btn:hover {
+    background: transparent !important;
+    color: #333;
+}
